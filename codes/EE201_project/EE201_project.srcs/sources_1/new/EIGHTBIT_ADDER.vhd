@@ -52,10 +52,10 @@ signal Bcon : STD_LOGIC_VECTOR (15 downto 0);
 
 begin
 
-Acon <= (7 downto 0 => Ain(7)) & Ain;
-Acon <= (others => '0');
-Bcon(7 downto 0) <= Bin;
-Bcon <= (others => '0');
+Acon <= (15 downto 8 => '0') & Ain;
+--Acon <= (others => '0');
+Bcon <= (15 downto 8 => '0') & Bin;
+--Bcon <= (others => '0');
 
 --    A16 <= (others => '0');
 --    A16(7 downto 0) <= A8;
