@@ -22,6 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all;
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -44,7 +45,7 @@ end Controller;
 
 architecture Behavioral of Controller is
 
-signal temp_count : std_logic_vector(2 downto 0);
+signal cnt : std_logic_vector(2 downto 0);
 --signal counter : std_logic_vector(0 downto 0);
 
 type state_typ is (IDLE, INIT, TEST, ADD, SHIFT);
@@ -56,9 +57,9 @@ process (clk, reset)
     begin
         if reset='0' then
             state <= INIT;
-            temp_count <="000";
+            cnt <= "000";
             
-        elsif (clk'event and clk='1') then
+        elsif (rising_edge(clk)) then
          case state is
            when INIT =>
             if START ='0' then
@@ -66,7 +67,7 @@ process (clk, reset)
             else 
                 if LSB ='0' then
                     state <= SHIFT;
-                else 
+                elsif LSB='1' then 
                     state <= ADD;
                 end if;
             end if;    
@@ -74,12 +75,12 @@ process (clk, reset)
            when ADD =>
                state <= SHIFT;
            when SHIFT =>
-            if temp_count ="111" then
-                temp_count <= "000";
-                state<= IDLE;
+            if cnt ="111" then
+                state <= IDLE;
+                cnt <= "000";
             else
-                temp_count <= temp_count + 1; 
                 state <= INIT;
+                cnt <= cnt + 1; 
             end if; 
             
          end case;

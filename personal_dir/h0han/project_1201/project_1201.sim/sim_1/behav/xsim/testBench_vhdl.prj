@@ -1,8 +1,8 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../EE201_project.srcs/sources_1/new/ADDER.vhd" \
-"../../../../EE201_project.srcs/sources_1/new/EIGHTBIT_ADDER.vhd" \
-"../../../../EE201_project.srcs/sim_1/new/TB1.vhd" \
+"../../../../project_1201.srcs/sources_1/new/ADDER.vhd" \
+"../../../../project_1201.srcs/sources_1/new/EIGHTBIT_ADDER.vhd" \
+"../../../../project_1201.srcs/sim_1/new/TB1.vhd" \
 
 # Do not sort compile order
 nosort

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201/project_1201.srcs/sources_1/new/ADDER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADDER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201/project_1201.srcs/sources_1/new/EIGHTBIT_ADDER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EIGHTBIT_ADDER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201/project_1201.srcs/sim_1/new/TB1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testBench'
