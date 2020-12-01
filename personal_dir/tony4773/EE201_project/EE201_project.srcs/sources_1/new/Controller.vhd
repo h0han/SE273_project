@@ -21,7 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use ieee.std_logic_unsigned.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -55,27 +55,22 @@ begin
 process (clk, reset)
     begin
         if reset='0' then
-            state <= IDLE;
-            --counter<="0";
+            state <= INIT;
             temp_count <="000";
             
         elsif (clk'event and clk='1') then
          case state is
-           when IDLE =>
-            if START ='1' then
+           when INIT =>
+            if START ='0' then
                 state <=INIT;
             else 
-                state <= IDLE;
-            end if;
-           when INIT =>
-            state <= TEST;
-           when TEST =>
-            if LSB ='0' then
-                state <= SHIFT;
-            else 
-                state <= ADD;
-            end if; 
-            
+                if LSB ='0' then
+                    state <= SHIFT;
+                else 
+                    state <= ADD;
+                end if;
+            end if;    
+           
            when ADD =>
                state <= SHIFT;
            when SHIFT =>
@@ -83,8 +78,8 @@ process (clk, reset)
                 temp_count <= "000";
                 state<= IDLE;
             else
-                temp_count <= temp_count + 1; --왜 오류가나지 여기서
-                state <= TEST;
+                temp_count <= temp_count + 1; 
+                state <= INIT;
             end if; 
             
          end case;
