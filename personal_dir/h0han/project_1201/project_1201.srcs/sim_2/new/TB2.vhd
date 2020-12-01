@@ -32,7 +32,7 @@ end component;
 signal A : std_logic_vector(7 downto 0);
 signal B : std_logic_vector(7 downto 0);
 signal C_temp : std_logic_vector(15 downto 0);
-
+signal op_code : std_logic_vector(2 downto 0);
 type state_type is (IDLE, INIT, OP);
 signal state : state_type;
 constant CLK_period : time := 10ms;
@@ -43,18 +43,21 @@ UUT : EIGHTBIT_ADDER port map(Ain => A, Bin => B, C => C_temp);
 
 stim_proc : process
 begin
-`       OP_CODE <= "001";
-        A <= "00000110";
-        B <= "00001101";
+        OP_CODE <= "001";
+        A <= "00001111";
+        B <= "00001111";
     wait for CLK_period*10;
-        A <= "11111010";
-        B <= "00001101";
+        OP_CODE <= "010";
+        A <= "00001111";
+        B <= "00001111";
     wait for CLK_period*10;
-        A <= "00000110";
-        B <= "11110011";
+        OP_CODE <= "100";
+        A <= "00001111";
+        B <= "00001111";
     wait for CLK_period*10;
-        A <= "11111010";
-        B <= "11110011";
+        OP_CODE <= "100";
+        A <= "00000000";
+        B <= "00001111";
     wait for CLK_period*10;        
 end process;
 end tb;
