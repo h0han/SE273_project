@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201/project_1201.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/hyhan/Desktop/workspace/EE201_project/codes/project_1202/project_1202.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="ea57bb275027489b8d6c58c61bf5783e"/>
+    <Option Name="Id" Val="56597538158a44a8947425f4afbd4c54"/>
     <Option Name="Part" Val="xc7a12ticsg325-1L"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -30,7 +30,6 @@
     <Option Name="ActiveSimSet" Val="sim_2"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -38,7 +37,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="103"/>
+    <Option Name="WTXSimLaunchSim" Val="104"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -69,7 +68,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/ADDER.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../tony4773/EE201_project/EE201_project.srcs/sources_1/new/ADDER.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../personal_dir/tony4773/EE201_project/EE201_project.srcs/sources_1/new/ADDER.vhd"/>
           <Attr Name="ImportTime" Val="1606736926"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -77,7 +76,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/EIGHTBIT_ADDER.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../tony4773/EE201_project/EE201_project.srcs/sources_1/new/EIGHTBIT_ADDER.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../personal_dir/tony4773/EE201_project/EE201_project.srcs/sources_1/new/EIGHTBIT_ADDER.vhd"/>
           <Attr Name="ImportTime" Val="1606754722"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -85,7 +84,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Desktop/calculator_top.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../calculator_top.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../calculator_top.vhd"/>
           <Attr Name="ImportTime" Val="1606852760"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -107,7 +106,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/TB1.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../tony4773/EE201_project/EE201_project.srcs/sim_1/new/TB1.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../personal_dir/tony4773/EE201_project/EE201_project.srcs/sim_1/new/TB1.vhd"/>
           <Attr Name="ImportTime" Val="1606755357"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -138,6 +137,8 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_2/new/TB2.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../personal_dir/h0han/project_1201/project_1201.srcs/sim_2/new/TB2.vhd"/>
+          <Attr Name="ImportTime" Val="1606853052"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
