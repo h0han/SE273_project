@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/hyhan/Desktop/workspace/EE201_project/codes/EE201_project/EE201_project.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/EE201_project/EE201_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="cbf23cea31a14aa498a790caab2cc095"/>
@@ -76,6 +76,13 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/EIGHTBIT_ADDER.vhd">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/MULTIPLIER.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
