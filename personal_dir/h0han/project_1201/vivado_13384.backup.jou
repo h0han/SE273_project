@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Dec  2 01:53:01 2020
+# Process ID: 13384
+# Current directory: C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11620 C:\Users\hyhan\Desktop\workspace\EE201_project\personal_dir\h0han\project_1201\project_1201.xpr
+# Log file: C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201/vivado.log
+# Journal file: C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201/project_1201.xpr
+update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 10 s
+run 10 s
+run 10 s
+run 100 s
+step
+run 100 s
+step
+run 100 s
+run 100 s
+step
+run 100 s
+step
+step
+step
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source testBench.tcl
+run 100 s
+launch_simulation
+source testBench.tcl
+run 100 s
+run 100 s
+run 100 s
+step
+step
+step
+run 100 s
+run 100 s
+close_sim
+launch_simulation
+source testBench.tcl
+run 100 s
+run 100 s
+run all
+close_sim
+launch_simulation
+source testBench.tcl
+run 100 s
+run 100 s
+run 100 s
+run all
+close_sim
+launch_simulation
+close_sim

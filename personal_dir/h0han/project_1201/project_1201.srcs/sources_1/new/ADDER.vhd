@@ -39,10 +39,11 @@ entity ADDER is
            Cout : out STD_LOGIC);
 end ADDER;
 
-architecture Behavioral of ADDER is
+  architecture Behavioral of ADDER is
 
 begin
-    S <= A XOR B XOR Cin;
-    Cout <= (A AND B) OR (Cin AND A) OR (Cin AND B);    
 
+    S <= A XOR B XOR Cin;
+    Cout <= (A AND B) OR (Cin AND A) OR (Cin AND B); 
+    
 end Behavioral;

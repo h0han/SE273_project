@@ -32,8 +32,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity EIGHTBIT_ADDER is
-    Port ( Ain : in STD_LOGIC_VECTOR (7 downto 0);
-           Bin : in STD_LOGIC_VECTOR (7 downto 0);
+    Port ( Ain : in STD_LOGIC_VECTOR (15 downto 0);
+           Bin : in STD_LOGIC_VECTOR (15 downto 0);
+           oper : in STD_LOGIC;
            C : out STD_LOGIC_VECTOR (15 downto 0));
 end EIGHTBIT_ADDER;
 
@@ -46,39 +47,45 @@ component ADDER is
            Cout : out STD_LOGIC);
 end component;
 
+signal b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16 : std_logic;
 signal c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16 : std_logic;
-signal Acon : STD_LOGIC_VECTOR (15 downto 0);
-signal Bcon : STD_LOGIC_VECTOR (15 downto 0);
 
 begin
 
-Acon <= (15 downto 8 => '0') & Ain;
---Acon <= (others => '0');
-Bcon <= (15 downto 8 => '0') & Bin;
---Bcon <= (others => '0');
 
---    A16 <= (others => '0');
---    A16(7 downto 0) <= A8;
---    B16 <= (others => '0');
---    B16(7 downto 0) <= B8;
---    C16 <= (others => '0');
---    C16(7 downto 0) <= C8;
+
+b1 <= Bin(0) xor oper;
+b2 <= Bin(1) xor oper;
+b3 <= Bin(2) xor oper;
+b4 <= Bin(3) xor oper;
+b5 <= Bin(4) xor oper;
+b6 <= Bin(5) xor oper;
+b7 <= Bin(6) xor oper;
+b8 <= Bin(7) xor oper;
+b9 <= Bin(8) xor oper;
+b10 <= Bin(9) xor oper;
+b11 <= Bin(10) xor oper;
+b12 <= Bin(11) xor oper;
+b13 <= Bin(12) xor oper;
+b14 <= Bin(13) xor oper;
+b15 <= Bin(14) xor oper;
+b16 <= Bin(15) xor oper;
     
-    A1 : ADDER port map(A => Acon(0), B => Bcon(0), Cin => '0', S => C(0), Cout => c1);
-    A2 : ADDER port map(A => Acon(1), B => Bcon(1), Cin => c1, S => C(1), Cout => c2);
-    A3 : ADDER port map(A => Acon(2), B => Bcon(2), Cin => c2, S => C(2), Cout => c3);
-    A4 : ADDER port map(A => Acon(3), B => Bcon(3), Cin => c3, S => C(3), Cout => c4);
-    A5 : ADDER port map(A => Acon(4), B => Bcon(4), Cin => c4, S => C(4), Cout => c5);
-    A6 : ADDER port map(A => Acon(5), B => Bcon(5), Cin => c5, S => C(5), Cout => c6);
-    A7 : ADDER port map(A => Acon(6), B => Bcon(6), Cin => c6, S => C(6), Cout => c7);
-    A8 : ADDER port map(A => Acon(7), B => Bcon(7), Cin => c7, S => C(7), Cout => c8);
-    A9 : ADDER port map(A => Acon(8), B => Bcon(8), Cin => c8, S => C(8), Cout => c9);
-    A10 : ADDER port map(A => Acon(9), B => Bcon(9), Cin => c9, S => C(9), Cout => c10);
-    A11 : ADDER port map(A => Acon(10), B => Bcon(10), Cin => c10, S => C(10), Cout => c11);
-    A12 : ADDER port map(A => Acon(11), B => Bcon(11), Cin => c11, S => C(11), Cout => c12);
-    A13 : ADDER port map(A => Acon(12), B => Bcon(12), Cin => c12, S => C(12), Cout => c13);
-    A14 : ADDER port map(A => Acon(13), B => Bcon(13), Cin => c13, S => C(13), Cout => c14);
-    A15 : ADDER port map(A => Acon(14), B => Bcon(14), Cin => c14, S => C(14), Cout => c15);
-    A16 : ADDER port map(A => Acon(15), B => Bcon(15), Cin => c15, S => C(15), Cout => c16); 
+    A1 : ADDER port map(A => Ain(0), B => b1, Cin => oper, S => C(0), Cout => c1);
+    A2 : ADDER port map(A => Ain(1), B => b2, Cin => c1, S => C(1), Cout => c2);
+    A3 : ADDER port map(A => Ain(2), B => b3, Cin => c2, S => C(2), Cout => c3);
+    A4 : ADDER port map(A => Ain(3), B => b4, Cin => c3, S => C(3), Cout => c4);
+    A5 : ADDER port map(A => Ain(4), B => b5, Cin => c4, S => C(4), Cout => c5);
+    A6 : ADDER port map(A => Ain(5), B => b6, Cin => c5, S => C(5), Cout => c6);
+    A7 : ADDER port map(A => Ain(6), B => b7, Cin => c6, S => C(6), Cout => c7);
+    A8 : ADDER port map(A => Ain(7), B => b8, Cin => c7, S => C(7), Cout => c8);
+    A9 : ADDER port map(A => Ain(8), B => b9, Cin => c8, S => C(8), Cout => c9);
+    A10 : ADDER port map(A => Ain(9), B => b10, Cin => c9, S => C(9), Cout => c10);
+    A11 : ADDER port map(A => Ain(10), B => b11, Cin => c10, S => C(10), Cout => c11);
+    A12 : ADDER port map(A => Ain(11), B => b12, Cin => c11, S => C(11), Cout => c12);
+    A13 : ADDER port map(A => Ain(12), B => b13, Cin => c12, S => C(12), Cout => c13);
+    A14 : ADDER port map(A => Ain(13), B => b14, Cin => c13, S => C(13), Cout => c14);
+    A15 : ADDER port map(A => Ain(14), B => b15, Cin => c14, S => C(14), Cout => c15);
+    A16 : ADDER port map(A => Ain(15), B => b16, Cin => c15, S => C(15), Cout => c16); 
 
 end Behavioral;

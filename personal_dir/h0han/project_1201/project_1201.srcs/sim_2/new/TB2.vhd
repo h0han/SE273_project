@@ -22,42 +22,66 @@ component calculator_top is
 );
 end component;
 
-component EIGHTBIT_ADDER is
-    Port ( Ain : in std_logic_vector;
-            Bin : in std_logic_vector;
-            C : out std_logic_vector );
-end component;
 
 --signal cnt : std_logic_vector(3 downto 0);
-signal A : std_logic_vector(7 downto 0);
-signal B : std_logic_vector(7 downto 0);
-signal C_temp : std_logic_vector(15 downto 0);
-signal op_code : std_logic_vector(2 downto 0);
-type state_type is (IDLE, INIT, OP);
-signal state : state_type;
-constant CLK_period : time := 10ms;
+signal sys_reset_b : std_logic := '0';
+signal sys_clk : std_logic := '0';
+signal start : std_logic := '0';
+signal op_code : std_logic_vector(2 downto 0) := (others => '0');
+signal data_a : std_logic_vector(7 downto 0) := (others => '0');
+signal data_b : std_logic_vector(7 downto 0) := (others => '0');
+signal data_c : std_logic_vector(15 downto 0) := (others => '0');
+signal end_op : std_logic := '0';
+
+constant CLK_period : time := 10ns;
 
 begin
 
-UUT : EIGHTBIT_ADDER port map(Ain => A, Bin => B, C => C_temp);
+UUT : calculator_top port map(
+    sys_reset_b => sys_reset_b,
+    sys_clk => sys_clk,
+    START => START,
+    OP_CODE => OP_CODE,
+    DATA_A => DATA_A,
+    DATA_B => DATA_B,
+    DATA_C => DATA_C,
+    END_OP => END_OP);
+
+clk_process :process
+begin
+    sys_clk <= '0';
+    wait for clk_period/2;
+    sys_clk <= '1';
+    wait for clk_period/2;
+end process;
 
 stim_proc : process
 begin
+    wait for CLK_period*10;
+        sys_reset_b <= '1';
         OP_CODE <= "001";
-        A <= "00001111";
-        B <= "00001111";
+        DATA_A <= "00001111";
+        DATA_B <= "00001111";
+        start <= '1';
+        
+    wait for CLK_period*10;
+        OP_CODE <= "001";
+        DATA_A <= "00001111";
+        DATA_B <= "00001111";
+        start <= '1';
+        
     wait for CLK_period*10;
         OP_CODE <= "010";
-        A <= "00001111";
-        B <= "00001111";
+        DATA_A <= "00001111";
+        DATA_B <= "00001111";
+        start <= '1';
+        
     wait for CLK_period*10;
-        OP_CODE <= "100";
-        A <= "00001111";
-        B <= "00001111";
-    wait for CLK_period*10;
-        OP_CODE <= "100";
-        A <= "00000000";
-        B <= "00001111";
+        OP_CODE <= "010";
+        DATA_A <= "00000000";
+        DATA_B <= "00001111";
+        start <= '1';
+        
     wait for CLK_period*10;        
 end process;
 end tb;

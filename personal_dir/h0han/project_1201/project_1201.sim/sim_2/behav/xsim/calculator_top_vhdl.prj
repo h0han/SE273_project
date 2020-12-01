@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../project_1201.srcs/sources_1/new/ADDER.vhd" \
-"../../../../project_1201.srcs/sources_1/new/EIGHTBIT_ADDER.vhd" \
-"../../../../../../../../../calculator_top.vhd" \
-
-# Do not sort compile order
-nosort
