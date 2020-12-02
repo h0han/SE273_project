@@ -82,12 +82,13 @@ begin
         DATA_B <= "00001111";
         start <= '1';
         
-    wait for CLK_period*10;
+     wait for CLK_period*10;
         OP_CODE <= "100";
         DATA_A <= "00001111";
         DATA_B <= "00001111";
-        start <= '1';    
+        start <= '1';
+            
         
-    wait for CLK_period*10;        
+    --wait for CLK_period*10;        
 end process;
 end tb;
