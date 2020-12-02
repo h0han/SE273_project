@@ -1,11 +1,20 @@
 
 { 
+<<<<<<< HEAD
     crc :  7847460652407470292  , 
     ccp_crc :  0  , 
     cmdline : " -wto 56597538158a44a8947425f4afbd4c54 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testBench_behav xil_defaultlib.testBench" , 
     buildDate : "Nov 18 2020" , 
     buildTime : "09:47:47" , 
     linkCmd : "C:\\Xilinx\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/testBench_behav/xsimk.exe\"   \"xsim.dir/testBench_behav/obj/xsim_0.win64.obj\" \"xsim.dir/testBench_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+=======
+    crc :  6565280328479612647  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 56597538158a44a8947425f4afbd4c54 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testBench_behav xil_defaultlib.testBench" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "20:09:33" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2020.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/testBench_behav/xsimk.exe\"   \"xsim.dir/testBench_behav/obj/xsim_0.win64.obj\" \"xsim.dir/testBench_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2020.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+>>>>>>> 9f881404852e3b8f6847682d22899b1450dea088
     aggregate_nets : 
     [ 
     ] 

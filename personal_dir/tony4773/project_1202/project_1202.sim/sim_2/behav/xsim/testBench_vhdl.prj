@@ -2,7 +2,11 @@
 vhdl xil_defaultlib  \
 "../../../../project_1202.srcs/sources_1/new/ADDER.vhd" \
 "../../../../project_1202.srcs/sources_1/new/EIGHTBIT_ADDER.vhd" \
+<<<<<<< HEAD
 "../../../../../calculator_top.vhd" \
+=======
+"../../../../project_1202.srcs/sources_1/imports/Desktop/calculator_top.vhd" \
+>>>>>>> 9f881404852e3b8f6847682d22899b1450dea088
 "../../../../project_1202.srcs/sim_2/new/TB2.vhd" \
 
 # Do not sort compile order
