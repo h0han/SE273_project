@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  2 00:24:49 2020
+# Process ID: 27268
+# Current directory: C:/Users/tony4/Desktop/EE201_project/personal_dir/tony4773/project_1201
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22728 C:\Users\tony4\Desktop\EE201_project\personal_dir\tony4773\project_1201\project_1201.xpr
+# Log file: C:/Users/tony4/Desktop/EE201_project/personal_dir/tony4773/project_1201/vivado.log
+# Journal file: C:/Users/tony4/Desktop/EE201_project/personal_dir/tony4773/project_1201\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/tony4/Desktop/EE201_project/personal_dir/tony4773/project_1201/project_1201.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1201' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/tony4/calculator_top.vhd', nor could it be found using path 'C:/Users/hyhan/Desktop/calculator_top.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'project_1201.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.902 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  2 00:27:51 2020...

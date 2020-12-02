@@ -1,0 +1,22 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tony4/Desktop/calculator_toppp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calculator_top'
+ERROR: [VRFC 10-2935] 'state' is already declared in this region [C:/Users/tony4/Desktop/calculator_toppp.vhd:34]
+ERROR: [VRFC 10-3760] type 'std_logic' does not match with the integer literal [C:/Users/tony4/Desktop/calculator_toppp.vhd:34]
+ERROR: [VRFC 10-4982] syntax error near 'signal' [C:/Users/tony4/Desktop/calculator_toppp.vhd:36]
+ERROR: [VRFC 10-2989] 'ain' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:299]
+ERROR: [VRFC 10-2989] 'bin' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:301]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:311]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:312]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:313]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:314]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:315]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:316]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:317]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:318]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:319]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:320]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:321]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:322]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:323]
+ERROR: [VRFC 10-2989] 'adder' is not declared [C:/Users/tony4/Desktop/calculator_toppp.vhd:324]
+INFO: [#UNDEF] Sorry, too many errors..

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  2 00:17:03 2020
+# Process ID: 22808
+# Current directory: C:/Users/tony4/Desktop/EE201_project/personal_dir/tony4773/EE201_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26100 C:\Users\tony4\Desktop\EE201_project\personal_dir\tony4773\EE201_project\EE201_project.xpr
+# Log file: C:/Users/tony4/Desktop/EE201_project/personal_dir/tony4773/EE201_project/vivado.log
+# Journal file: C:/Users/tony4/Desktop/EE201_project/personal_dir/tony4773/EE201_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/tony4/Desktop/EE201_project/personal_dir/tony4773/EE201_project/EE201_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 1015.570 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  2 00:20:56 2020...
