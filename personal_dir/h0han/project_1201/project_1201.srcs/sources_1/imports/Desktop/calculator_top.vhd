@@ -61,16 +61,7 @@ process(sys_clk, sys_reset_b)
         end if;
         
     elsif (rising_edge (sys_clk)) then
-        case state is
---            when idle =>
---                if start = '0' then
---                    state <= idle;
---                elsif start = '1' then
---                    state <= init;
---                else
---                    state <= idle;
---                end if;
-                                
+        case state is                         
             when init =>
                 if start = '1' then
                     if op_code = "001" then

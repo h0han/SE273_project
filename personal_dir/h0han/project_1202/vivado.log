@@ -2,13 +2,13 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Dec  3 19:07:11 2020
-# Process ID: 4284
+# Start of session at: Fri Dec  4 03:19:38 2020
+# Process ID: 21152
 # Current directory: C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1202
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19888 C:\Users\hyhan\Desktop\workspace\EE201_project\personal_dir\h0han\project_1202\project_1202.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24280 C:\Users\hyhan\Desktop\workspace\EE201_project\personal_dir\h0han\project_1202\project_1202.xpr
 # Log file: C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1202/vivado.log
 # Journal file: C:/Users/hyhan/Desktop/workspace/EE201_project/personal_dir/h0han/project_1202\vivado.jou
 #-----------------------------------------------------------
 start_gui
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  3 19:08:15 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  4 03:20:25 2020...
