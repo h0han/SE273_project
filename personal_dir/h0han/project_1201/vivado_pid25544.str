@@ -1055,3 +1055,7 @@ selectCodeEditor("calculator_top.vhd", 257, 213); // bP (w, cs)
 selectCodeEditor("calculator_top.vhd", 256, 313); // bP (w, cs)
 // Elapsed time: 47 seconds
 selectCodeEditor("calculator_top.vhd", 245, 296); // bP (w, cs)
+// Elapsed time: 368 seconds
+selectCodeEditor("calculator_top.vhd", 137, 365); // bP (w, cs)
+// Elapsed time: 31 seconds
+selectCodeEditor("calculator_top.vhd", 321, 219); // bP (w, cs)
