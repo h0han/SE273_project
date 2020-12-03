@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  2 21:38:14 2020
+# Process ID: 12192
+# Current directory: C:/Users/tony4/Desktop/project_1202
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19704 C:\Users\tony4\Desktop\project_1202\project_1202.xpr
+# Log file: C:/Users/tony4/Desktop/project_1202/vivado.log
+# Journal file: C:/Users/tony4/Desktop/project_1202\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project C:/Users/tony4/Desktop/project_1202/project_1202.xpr
+update_compile_order -fileset sources_1
