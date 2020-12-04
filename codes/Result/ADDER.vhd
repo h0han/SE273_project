@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 2020/11/27 23:47:03
+-- Create Date: 2020/11/30 20:09:26
 -- Design Name: 
--- Module Name: D_ADDER - Behavioral
+-- Module Name: ADDER - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,17 +31,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity D_ADDER is
+entity ADDER is
     Port ( A : in STD_LOGIC;
            B : in STD_LOGIC;
            Cin : in STD_LOGIC;
            S : out STD_LOGIC;
            Cout : out STD_LOGIC);
-end D_ADDER;
+end ADDER;
 
-architecture Behavioral of D_ADDER is
+  architecture Behavioral of ADDER is
 
 begin
 
-
+    S <= A XOR B XOR Cin;
+    Cout <= (A AND B) OR (Cin AND A) OR (Cin AND B); 
+    
 end Behavioral;
