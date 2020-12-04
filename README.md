@@ -12,5 +12,5 @@ Design a simple calculator that performs addition, subtraction, and multiplicati
 
 ## Design
 
-**![SM Diagram](.\report\fig\smdia.png)**
+**![SM Diagram](./report/fig/smdia.png)**
 
